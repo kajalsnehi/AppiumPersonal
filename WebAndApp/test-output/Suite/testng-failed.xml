@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test thread-count="5" name="Test(failed)" parallel="tests">
+    <classes>
+      <class name="com.bajajChetak.Test.LoginTest">
+        <methods>
+          <include name="am"/>
+          <include name="report_setup"/>
+          <include name="login1"/>
+          <include name="bc"/>
+        </methods>
+      </class> <!-- com.bajajChetak.Test.LoginTest -->
+      <class name="com.bajajChetak.Test.HomePageTest">
+        <methods>
+          <include name="am"/>
+          <include name="home"/>
+          <include name="report_setup"/>
+          <include name="bc"/>
+        </methods>
+      </class> <!-- com.bajajChetak.Test.HomePageTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
